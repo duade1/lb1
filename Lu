@@ -1,0 +1,47 @@
+A=[.,
+-그,
+-2.
+11.
+［一は。
+6. 3,
+-21.
+［-2,7,
+-고. -기
+「1,生,
+-7. -511
+b -
+[1, 2, 5,
+61
+T-
+[1
+for i in range (len (A)) :
+L. append ( [1)
+for j in range (len (A(01)):
+I[ll . append (1 LE 1 = ] elLse 0)
+for i in range (len (A)):
+Ior ] an Iange (1+1, 그En (A[0)) :
+L(JJ (iJ = A(a] (a] / A(il [il
+A(jJ (il = 0
+for k in zange (a+L,
+NI=n (A[019) 3
+ATSTK］ ATSTK］ ATSTK］ ATSTK］ ATSTK］ ATSTK］ _ ー A C エ 』 [ に ］ ★ エ [ ゴ コ ロ ニ コ
+for i in L:
+print (i)
+for i in A:
+print (i)
+У = [1
+for i in range (len (A)):
+for j in range (len (y) ) :
+T
+y.append (b [i] /L[ig (in)
+print (y)
+x = (1
+эперь, е
+for i in range (len (A) - 1, -1, -1): for j in range (len (X)
+- 그,
+-1,
+-_)  -_)  -_)  -_) 
+и вверх
+y[il -= A[il [len (A) -
+ー ココ～3「ココ
+print (A[i] [il, Y[il) x.insert (0, Y[i]/A[i] [il)
