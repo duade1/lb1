@@ -1,0 +1,16 @@
+src/
+├── api/                # Слой сетевых запросов (Axios инстансы и функции)
+│   ├── employeeApi.js
+│   └── olympApi.js
+├── components/         # Общие UI-компоненты (Shared)
+│   ├── UI/             # Кнопки, таблицы, инпуты (без логики)
+│   └── Navibar.js
+├── features/           # Слайсы функционала (Бизнес-логика + компоненты)
+│   ├── employees/
+│   │   ├── EmployeeTable.js
+│   │   ├── EmployeeModal.js
+│   │   └── useEmployees.js (Кастомный хук для логики)
+│   └── olympiads/
+├── hooks/              # Общие хуки
+├── App.js              # Роутинг и глобальная разметка
+└── index.js            # Точка входа
