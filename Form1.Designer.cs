@@ -1,17 +1,9 @@
-﻿
-namespace lab11
+﻿namespace UniversalXmlApp
 {
     partial class Form1
     {
-        /// <summary>
-        /// Обязательная переменная конструктора.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Освободить все используемые ресурсы.
-        /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,119 +13,123 @@ namespace lab11
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором форм Windows
+        #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
-        /// </summary>
         private void InitializeComponent()
         {
-            this.pb = new System.Windows.Forms.PictureBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.новыйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.сохранитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.открытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.нарисоватьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.кругToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.концентраToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.последовательностьКруговToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.btnCreate = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnRead = new System.Windows.Forms.Button();
+            this.dgvInput = new System.Windows.Forms.DataGridView();
+            this.colParam = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtOutput = new System.Windows.Forms.TextBox();
+            this.lblTable = new System.Windows.Forms.Label();
+            this.lblOutput = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInput)).BeginInit();
             this.SuspendLayout();
             // 
-            // pb
+            // btnCreate
             // 
-            this.pb.Location = new System.Drawing.Point(0, 25);
-            this.pb.Name = "pb";
-            this.pb.Size = new System.Drawing.Size(800, 430);
-            this.pb.TabIndex = 0;
-            this.pb.TabStop = false;
+            this.btnCreate.Location = new System.Drawing.Point(15, 15);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(180, 35);
+            this.btnCreate.TabIndex = 0;
+            this.btnCreate.Text = "1. Создать новый XML";
+            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
-            // menuStrip1
+            // btnAdd
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem,
-            this.нарисоватьToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.btnAdd.Location = new System.Drawing.Point(210, 15);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(180, 35);
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.Text = "2. Сохранить таблицу в XML";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // файлToolStripMenuItem
+            // btnRead
             // 
-            this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.новыйToolStripMenuItem,
-            this.открытьToolStripMenuItem,
-            this.сохранитьToolStripMenuItem});
-            this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.файлToolStripMenuItem.Text = "Файл";
+            this.btnRead.Location = new System.Drawing.Point(405, 15);
+            this.btnRead.Name = "btnRead";
+            this.btnRead.Size = new System.Drawing.Size(180, 35);
+            this.btnRead.TabIndex = 2;
+            this.btnRead.Text = "3. Прочитать и вывести XML";
+            this.btnRead.UseVisualStyleBackColor = true;
+            this.btnRead.Click += new System.EventHandler(this.btnRead_Click);
             // 
-            // новыйToolStripMenuItem
+            // dgvInput
             // 
-            this.новыйToolStripMenuItem.Name = "новыйToolStripMenuItem";
-            this.новыйToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.новыйToolStripMenuItem.Text = "Новый";
-            this.новыйToolStripMenuItem.Click += new System.EventHandler(this.новыйToolStripMenuItem_Click);
+            this.dgvInput.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvInput.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInput.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colParam,
+            this.colValue});
+            this.dgvInput.Location = new System.Drawing.Point(15, 85);
+            this.dgvInput.Name = "dgvInput";
+            this.dgvInput.Size = new System.Drawing.Size(275, 310);
+            this.dgvInput.TabIndex = 3;
             // 
-            // сохранитьToolStripMenuItem
+            // colParam
             // 
-            this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
-            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.сохранитьToolStripMenuItem.Text = "Сохранить";
-            this.сохранитьToolStripMenuItem.Click += new System.EventHandler(this.сохранитьToolStripMenuItem_Click);
+            this.colParam.HeaderText = "Параметр";
+            this.colParam.Name = "colParam";
             // 
-            // открытьToolStripMenuItem
+            // colValue
             // 
-            this.открытьToolStripMenuItem.Name = "открытьToolStripMenuItem";
-            this.открытьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.открытьToolStripMenuItem.Text = "Открыть";
-            this.открытьToolStripMenuItem.Click += new System.EventHandler(this.открытьToolStripMenuItem_Click);
+            this.colValue.HeaderText = "Значение";
+            this.colValue.Name = "colValue";
             // 
-            // нарисоватьToolStripMenuItem
+            // txtOutput
             // 
-            this.нарисоватьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.кругToolStripMenuItem,
-            this.концентраToolStripMenuItem,
-            this.последовательностьКруговToolStripMenuItem});
-            this.нарисоватьToolStripMenuItem.Name = "нарисоватьToolStripMenuItem";
-            this.нарисоватьToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
-            this.нарисоватьToolStripMenuItem.Text = "Нарисовать";
+            this.txtOutput.BackColor = System.Drawing.SystemColors.Window;
+            this.txtOutput.Location = new System.Drawing.Point(310, 85);
+            this.txtOutput.Multiline = true;
+            this.txtOutput.Name = "txtOutput";
+            this.txtOutput.ReadOnly = true;
+            this.txtOutput.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtOutput.Size = new System.Drawing.Size(275, 310);
+            this.txtOutput.TabIndex = 4;
             // 
-            // кругToolStripMenuItem
+            // lblTable
             // 
-            this.кругToolStripMenuItem.Name = "кругToolStripMenuItem";
-            this.кругToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.кругToolStripMenuItem.Text = "Круг";
+            this.lblTable.AutoSize = true;
+            this.lblTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.250F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblTable.Location = new System.Drawing.Point(12, 65);
+            this.lblTable.Name = "lblTable";
+            this.lblTable.Size = new System.Drawing.Size(161, 13);
+            this.lblTable.TabIndex = 5;
+            this.lblTable.Text = "Ввод любых параметров:";
             // 
-            // концентраToolStripMenuItem
+            // lblOutput
             // 
-            this.концентраToolStripMenuItem.Name = "концентраToolStripMenuItem";
-            this.концентраToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.концентраToolStripMenuItem.Text = "Концентрические окружности";
-            // 
-            // последовательностьКруговToolStripMenuItem
-            // 
-            this.последовательностьКруговToolStripMenuItem.Name = "последовательностьКруговToolStripMenuItem";
-            this.последовательностьКруговToolStripMenuItem.Size = new System.Drawing.Size(242, 22);
-            this.последовательностьКруговToolStripMenuItem.Text = "Последовательность кругов";
+            this.lblOutput.AutoSize = true;
+            this.lblOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.250F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblOutput.Location = new System.Drawing.Point(307, 65);
+            this.lblOutput.Name = "lblOutput";
+            this.lblOutput.Size = new System.Drawing.Size(149, 13);
+            this.lblOutput.TabIndex = 6;
+            this.lblOutput.Text = "Просмотр содержимого:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pb);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.ClientSize = new System.Drawing.Size(604, 411);
+            this.Controls.Add(this.lblOutput);
+            this.Controls.Add(this.lblTable);
+            this.Controls.Add(this.txtOutput);
+            this.Controls.Add(this.dgvInput);
+            this.Controls.Add(this.btnRead);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnCreate);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pb)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Универсальный XML Менеджер";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInput)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,16 +137,14 @@ namespace lab11
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pb;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem новыйToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem сохранитьToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem открытьToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem нарисоватьToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem кругToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem концентраToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem последовательностьКруговToolStripMenuItem;
+        private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnRead;
+        private System.Windows.Forms.DataGridView dgvInput;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colParam;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colValue;
+        private System.Windows.Forms.TextBox txtOutput;
+        private System.Windows.Forms.Label lblTable;
+        private System.Windows.Forms.Label lblOutput;
     }
 }
-
