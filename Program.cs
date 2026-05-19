@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace lab11
 {
-    static class Program
+    internal static class Program
     {
         /// <summary>
         /// Главная точка входа для приложения.
